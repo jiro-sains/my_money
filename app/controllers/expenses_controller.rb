@@ -1,10 +1,16 @@
 class ExpensesController < ApplicationController
   before_action :set_expense, only: [:show, :edit, :update, :destroy]
 
+require 'pry'
+
   # GET /expenses
   # GET /expenses.json
   def index
+    #binding.pry
     @expenses = Expense.all
+    @total_expenses = Expense.total
+    @avg_expenses = Expense.promedio
+    @max_expenses = Expense.max
   end
 
   # GET /expenses/1

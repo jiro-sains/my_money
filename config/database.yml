@@ -84,5 +84,5 @@ test:
 production:
   <<: *default
   database: my_money_production
-  username: my_money
-  password: <%= ENV['MY_MONEY_DATABASE_PASSWORD'] %>
+  #username: my_money
+  #password: <%= ENV['MY_MONEY_DATABASE_PASSWORD'] %>

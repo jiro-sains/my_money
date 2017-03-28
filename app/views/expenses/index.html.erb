@@ -1,7 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Stats</h1>
-<p>Total: </p>
+<h5>Total: <%= number_to_currency @total_expenses %> 
+</br>
+  Average: <%= number_to_currency @avg_expenses  %>
+</br>
+  Worst Sin: <%= number_to_currency @max_expenses  %>
+    </h5>
+
 <h1>Expenses</h1>
 
 <table>
