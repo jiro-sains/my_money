@@ -8,9 +8,9 @@ require 'pry'
   def index
     #binding.pry
     @expenses = Expense.all
-    @total_expenses = Expense.total
-    @avg_expenses = Expense.promedio
-    @max_expenses = Expense.max
+    @total_expenses = Calculations::Expense.total
+    @avg_expenses = Calculations::Expense.promedio
+    @max_expenses = Calculations::Expense.max
   end
 
   # GET /expenses/1
