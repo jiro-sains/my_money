@@ -2,6 +2,9 @@
 
 </br>
 <h2>Expenses</h2>
+
+<%= pie_chart [["Football", 10], ["Basketball", 5]] %>
+
 <h5>Total: <%= number_to_currency Calculations::Expense.total %> 
 </br>
   Average: <%= number_to_currency @avg_expenses  %>
