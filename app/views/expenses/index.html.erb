@@ -9,6 +9,10 @@
   Worst Sin: <%= number_to_currency @max_expenses  %>
     </h5>
 
+
+<%= pie_chart Category.map { |c| [c.name, 10 ]}  %>
+
+
 <h1>Expenses</h1>
 
 <table>
